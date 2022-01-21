@@ -28,11 +28,14 @@
             <option value="warszawa">Warszawa</option>
             <option value="gdansk">Gdańsk</option>
         </select><br />
-        <label for="sex">Płeć</label><br />
-        <input type="radio" name="sex" id="sex" > Meżczyzna <br />
-        <input type="radio" name="sex" id="sex1" > Kobieta <br />
+        <fieldset>
+            <legend>Płeć</legend>
 
-        <label><input type="checkbox" name="argament" required>Wyrażam zgode na przetwarzanie danych osobowych</label> <br />
+            <label><input type="radio" name="sex" id="sex"> Meżczyzna</label> <br />
+            <label><input type="radio" name="sex" id="sex1"> Kobieta</label> <br />
+        </fieldset>
+        <label><input type="checkbox" name="argament" required>Wyrażam zgode na przetwarzanie danych osobowych</label>
+        <br />
         <label><textarea name="wiadomosc" id="wiadomosc" placeholder="Napisz do nas"></textarea></label> <br />
         <input type="submit" value="Wyslij">
     </form>
