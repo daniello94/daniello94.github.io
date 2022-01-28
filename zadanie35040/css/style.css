@@ -1,42 +1,47 @@
-*{
+* {
     box-sizing: border-box;
 }
+
+
 /* wspólne */
+
 header,
 .main-aside,
-footer{
+footer {
     color: white;
     text-transform: uppercase;
     text-align: center;
 }
+
 header,
-footer{
+footer {
     height: 10vh;
     line-height: 10vh;
     width: 100%;
-
 }
+
+
 /* header  */
 
 header {
     background-color: red;
-    
 }
+
+
 /* section */
 
-.main-aside{
+.main-aside {
     display: flex;
     height: 70vh;
     width: 100%;
 }
-
-
 
 .aside-left {
     background-color: green;
     order: 1;
     flex-basis: 25%;
 }
+
 .aside-right {
     background-color: pink;
     order: 3;
@@ -51,49 +56,51 @@ p {
     flex-basis: 50%;
 }
 
-/* footer */
-footer {
-  background-color: violet;  
-}
-/* media */
-@media(min-width:768px) and (max-width:992px){
-    .main-aside {
-        
-        flex-flow: row wrap;    
-    }
-    
-   .aside-left {
-       order: 3;
-       align-self: flex-end;
-       flex-basis: 100%;
-       height: 50%;
-      }
- .aside-right,
-  p {
-           height: 50%;
-          width: 100%;
-          margin-bottom: 0;
-        }
-      .aside-right{
-          order: 2;
-      }
-      p{
-          order: 1;
-        flex-basis: 75%
-      }
-     
-}
-@media(max-width:768px){
-    .main-aside{
-      flex-direction: column;
-  }
-  p{
-      order: 0;
-  }
 
-      .aside-richt,
-      p ,
-      .aside-left{
-          flex-basis: 35%;
-      }
+/* footer */
+
+footer {
+    background-color: violet;
+}
+
+
+/* media */
+
+@media(min-width:768px) and (max-width:992px) {
+    .main-aside {
+        flex-flow: row wrap;
+    }
+    .aside-left {
+        order: 3;
+        align-self: flex-end;
+        flex-basis: 100%;
+        height: 50%;
+    }
+    .aside-right,
+    p {
+        height: 50%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .aside-right {
+        order: 2;
+    }
+    p {
+        order: 1;
+        flex-basis: 75%
+    }
+}
+
+@media(max-width:768px) {
+    .main-aside {
+        flex-direction: column;
+    }
+    p {
+        order: 0;
+    }
+    .aside-richt,
+    p,
+    .aside-left {
+        flex-basis: 38%;
+    }
 }

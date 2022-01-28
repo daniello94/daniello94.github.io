@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* wspólne */
+
+hr {
+    border: 1px solid #0076ff;
+    width: 70px;
+    border-bottom: 0;
+}
+
+.link {
+    border: 1px solid #0076ff;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    transition: 0.8s;
+    display: inline-block;
+}
+
+.link:hover {
+    background-color: #0076ff;
+    color: white;
+}
+
+section {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.countainer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+
+/* header */
+
+.main-header {
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .main-header-style {
+    text-align: center;
+}
+
+.main-header .main-header-style h1 {
+    color: #0076ff;
+    font-size: 4.2em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header-style p {
+    font-size: 1.3em;
+    color: #333;
+    margin: 40px 0;
+}
+
+.main-header-style span {
+    color: #0076ff;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.9em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+
+/* nawigacja */
+
+.main-menu {
+    background-color: #0076ff;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-menu ul .menu-itm {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-menu ul .menu-itm a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 20px;
+}
+
+.main-menu ul .menu-itm a:hover {
+    background-color: white;
+    color: #0076ff;
+    transition: 0.7s;
+}
+
+
+/* about */
+
+.about {
+    text-align: center;
+}
+
+.about .photo {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px;
+    color: #777;
+    margin: 40px auto 30px auto;
+    line-height: 1.4em;
+}
+
+
+/* portfolio */
+
+#portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-mini {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-mini .portfolio-itm {
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+.portfolio-mini .portfolio-itm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-mini .portfolio-itm h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    background-color: rgba(0, 0, 255, 0.5);
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+    transition: 00.7s;
+    opacity: 0;
+}
+
+.portfolio-mini .portfolio-itm h3:hover {
+    opacity: 1;
+}
+
+
+/* kontakt */
+
+.contact form {
+    max-width: 700px;
+    margin: 30 auto 40 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+input[type="text"],
+input[type="email"] {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.contact textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+    display: block;
+}
+
+.contact input[class="link"] {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.contact input[class="link"]:hover {
+    background-color: #0076ff;
+}
+
+
+/* social media */
+
+.social-media {
+    margin-top: 75px;
+}
+
+.social-media .social-link i {
+    color: #0076ff;
+    font-size: 3em;
+    margin: 0 20px;
+    transition: 1s;
+}
+
+.social-media .social-link i:hover {
+    color: #777;
+}
+
+
+/* footer */
+
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+
+/* media */
+
+@media all and (max-width:1200px) {
+    .countainer {
+        max-width: 992px;
+    }
+}
+
+@media all and (max-width:992px) {
+    .countainer {
+        max-width: 768px;
+    }
+    .portfolio-mini .portfolio-itm {
+        flex-basis: 50%;
+    }
+}
+
+@media all and (max-width:768px) {
+    .countainer {
+        max-width: 95%;
+    }
+    .portfolio-mini .portfolio-itm {
+        flex-basis: 100%;
+    }
+}
