@@ -1,0 +1,17 @@
+.accordion-button {
+    display: inline-block;
+}
+
+span {
+    color: rgba(255, 166, 0, 0.651);
+}
+
+p,
+h1 {
+    color: rgb(157, 162, 167);
+}
+
+span:hover {
+    color: rgb(157, 162, 167);
+    text-decoration: underline;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- nawigacja -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Landing Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#services">Services <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#showcase">Showcase</a>
+                    <a class="nav-link" href="#team">Team</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slaider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider-1.jpg" class="d-block w-100" alt="zdj">
+                <div class="carousel-caption ">
+                    <h2>First slide label</h2>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider-2.jpg" class="d-block w-100" alt="zdj">
+                <div class="carousel-caption ">
+                    <h2>Second slide label</h2>
+
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+    </div>
+    <!-- sekcja serwieces -->
+    <section id="services" class="services bg-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 main-p">
+                    <h3>Fully Responsive</h3>
+                    <p class="lead mb-0 ">This theme will look great on any device,no matter the size!</p>
+                </div>
+                <div class="col-md-4 main-p">
+                    <h3>Bootstrap 4 Ready</h3>
+                    <p class="lead mb-0 ">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                </div>
+                <div class="col-md-4 main-p">
+                    <h3>Easy to Use</h3>
+                    <p class="lead mb-0 ">Ready to use with your own content,or customize the source files!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- sekcja Showcase -->
+    <section id="showcase" class="showcase">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 picture order-md-2" style="background-image:url('img/view-1.jpg');"></div>
+                <div class="col-md-6 order-md-1 show-text">
+                    <h2>Fully Responsive Design</h2>
+                    <p class="lead mb-0  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ad at eligendi, porro assumenda quo, laboriosam placeat commodi corrupti, culpa velit aspernatur fugit blanditiis deleniti consequuntur est dignissimos veritatis
+                        tempora?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 picture order-md-1" style="background-image:url('img/view-2.jpg');"></div>
+                <div class="col-md-6 order-md-2 show-text">
+                    <h2>Updated For Bootstrap 4</h2>
+                    <p class="lead mb-0  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ad at eligendi, porro assumenda quo, laboriosam placeat commodi corrupti, culpa velit aspernatur fugit blanditiis deleniti consequuntur est dignissimos veritatis
+                        tempora?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 picture order-md-2" style="background-image:url('img/view-3.jpg');"></div>
+                <div class="col-md-6 order-md-1 show-text">
+                    <h2>Easy to Use & Costomize</h2>
+                    <p class="lead mb-0  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ad at eligendi, porro assumenda quo, laboriosam placeat commodi corrupti, culpa velit aspernatur fugit blanditiis deleniti consequuntur est dignissimos veritatis
+                        tempora?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sekcja team -->
+    <section id="team" class="team bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">Our team</h2>
+            <div class="row">
+                <div class="col-md-4 main-p">
+                    <div class="team-item mx-auto">
+                        <img class="rounded-circle img-fluid mb-3" src="img/team-1.jpg" alt="team">
+                        <p class="h5">Margaret E.</p>
+                        <p class="mb-0">SEO</p>
+                    </div>
+                </div>
+                <div class="col-md-4 main-p">
+                    <div class="team-item mx-auto">
+                        <img class="rounded-circle img-fluid mb-3" src="img/team-2.jpg" alt="team">
+                        <p class="h5">Fred S.</p>
+                        <p class="mb-0">CTO</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-item team-item-last mx-auto">
+                        <img class="rounded-circle img-fluid mb-3" src="img/team-3.jpg" alt="team">
+                        <p class="h5">Sarah W.</p>
+                        <p class="mb-0">Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- sekcja kontakt -->
+    <section class="contact text-white text-center">
+        <div class="container">
+            <h2 class="mb-5 ">Ready to get started? Sign up now!</h2>
+
+            <form class="w-75 mx-auto">
+                <div class="form-row">
+                    <div class="col-md-9 mb-3">
+                        <input type="email" class="form-control" placeholder="Email adress">
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer bg-light text-center ">
+        <div class="container">
+            <p class="mb-0 text-muted"><small>Website 2022 All Right Reserved</small> </p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
