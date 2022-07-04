@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+.container{
+    padding: 30px;
+}
+.btn{
+    margin-top: 10px;
+    
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .7s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.txt, .ntxt{
+    display: none;
+    
+}
+.open{
+    display: contents;
+    margin-top: 10px;
+}
+input{
+    margin-top: 10px;
+    width: 70%;
+    height: 30px;
+}
+label{
+    margin-top: 10px;
+}
